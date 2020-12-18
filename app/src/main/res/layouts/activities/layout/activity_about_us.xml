@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutUs">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/aau_tb_about"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/app_logo_v2" />
+
+        <TextView
+            android:id="@+id/definition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:maxLines="6"
+            android:text="The MakaTravel: A Mobile Travel Guide and Leisure Advertisement in Makati City is a mobile application for travelers to explore leisure places in Makati."
+            android:textColor="@color/colorPrimaries"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+                android:id="@+id/feedback"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/definition"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:maxLines="6"
+                android:text="Any suggestion/s to make this application more useful? Feel free to write it down."
+                android:textColor="@color/colorPrimaries"
+                android:textSize="16sp">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/aau_til_feedback"
+                android:layout_below="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                <!--EDIT USERNAME-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Feedback"
+                    android:inputType="textMultiLine"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/colorPrimaries"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/aau_btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_below="@+id/aau_til_feedback"
+                android:layout_marginTop="15dp"
+                android:text="Send"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorSecondaries"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+
+            <TextView
+                android:text="Created By: The Chosen One  "
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaries"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </RelativeLayout>
+
+</LinearLayout>

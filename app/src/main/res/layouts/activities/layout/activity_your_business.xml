@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.YourBusiness">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_y_business"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ll_fav"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaries"
+                    android:id="@+id/ff_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List: "
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/ayb_s_busi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dialog"></Spinner>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/ll_fav"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ayb_rv_yours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_below="@+id/ayb_rv_yours"
+                android:gravity="center"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaries"
+                    android:text="Want to advertise your Business?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaries"
+                    android:textSize="16sp"
+                    android:text="Come on and Click Join Now !!!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:id="@+id/ayb_btn_busi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Join Now"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

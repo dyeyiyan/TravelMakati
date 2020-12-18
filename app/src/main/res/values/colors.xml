@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorPrimaries">#333333</color>
+    <color name="colorSecondaries">#1d86e3</color>
+    <color name="colorTitle">#999999</color>
+    <!--gradient combination-->
+    <color name="dark_blue">#2193b0</color>
+    <color name="purple">#6dd5ed</color>
+
+<!--        <color name="colorBackground">#003585</color>-->
+<!--        <color name="colorTransparent">#80ffffff</color>-->
+<!--    <color name="colorItem">#000000</color>-->
+<!--    <color name="colorText">#000000</color>-->
+<!--    <color name="overlayBackground">#7f333639</color>-->
+<!--    <color name="colorIconBackground">#9d9d9d</color>-->
+
+
+
+<!--    <color name="tabTextColor">#fff</color>-->
+<!--    <color name="tabIndicator">#61accc</color>-->
+
+<!--    <color name="green">#93E124</color>-->
+<!--    <color name="black">#000000</color>-->
+<!--    <color name="light_grey">#e4e4e4</color>-->
+<!--    <color name="grey">#8b8b8b</color>-->
+<!--    <color name="dark_grey">#696969</color>-->
+<!--    <color name="white">#ffffff</color>-->
+
+<!--    <color name="colorPurple">#8860D0</color>-->
+<!--    <color name="colorBlack">#000000</color>-->
+<!--    <color name="colorDarkGrey">#2E2E2E</color>-->
+<!--    <color name="colorGrey">#464646</color>-->
+<!--    <color name="colorLightGrey">#5D5D5D</color>-->
+<!--    <color name="colorDarkWhite">#FFFFFF</color>-->
+<!--    <color name="colorBackRed">#EC4B4B</color>-->
+<!--    <color name="colorPending">#FF9900</color>-->
+<!--    <color name="colorMainBG">#EBEBEB</color>-->
+<!--    <color name="colorGreenButton">#2ECC71</color>-->
+<!--    <color name="colorTextBG">#E8E8E8</color>-->
+
+<!--    <color name="colorTextChat">#002154</color>-->
+<!--    <color name="colorOnlineStatus">#0DD255</color>-->
+<!--    <color name="colorReceiverName">#003585</color>-->
+<!--    <color name="colorReceiverMessage">#2D354C</color>-->
+<!--    <color name="colorBlackText">#000000</color>-->
+<!--    <color name="colorOnlineStatusText">#8B8B8B</color>-->
+<!--    <color name="colorSendButton">#3F66A2</color>-->
+
+<!--    <color name="colorDefault">#f6f9fc</color>-->
+<!--    <color name="colorNavFalse">#212121</color>-->
+<!--    <color name="colorNavTrue">#1d86e3</color>-->
+
+
+
+
+
+
+    <!--colorPrimary	Displayed most frequently across your app.-->
+    <!--colorPrimaryVariant	A tonal variation of primary color.-->
+    <!--colorSecondary	Accents select parts of your UI.-->
+    <!--If not provided, use primary.-->
+    <!--colorSecondaryVariant	A tonal variation of secondary color.-->
+    <!--colorBackground	The underlying color of an app’s content.-->
+    <!--Typically the background color of scrollable content.-->
+    <!--colorError	The color used to indicate error status.-->
+    <!--colorSurface	The color of surfaces such as cards, sheets, menus.-->
+    <!--colorOnPrimary	A color that passes accessibility guidelines for text/iconography when drawn on top of primary.-->
+    <!--colorOnSecondary	A color that passes accessibility guidelines for text/iconography when drawn on top of secondary.-->
+    <!--colorOnBackground	A color that passes accessibility guidelines for text/iconography when drawn on top of background.-->
+    <!--colorOnError	A color that passes accessibility guidelines for text/iconography when drawn on top of error.-->
+    <!--colorOnSurface	A color that passes accessibility guidelines for text/iconography when drawn on top of surface.-->
+
+</resources>

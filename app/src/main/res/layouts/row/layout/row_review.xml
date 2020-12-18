@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rr_civ_upic"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rr_ll_profile"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/rr_tv_uname"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaries"
+                    android:text="Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/colorPrimaries"
+                    android:id="@+id/rr_tv_time"
+                    android:textSize="13sp"
+                    android:text="33 min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/rr_ibtn_more"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaries"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+<!--        <TextView-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:autoLink="all"-->
+<!--            android:id="@+id/rrp_tv_title"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/colorText"-->
+<!--            android:text="Title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rr_civ_lpic"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/rr_tv_lname"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaries"
+                    android:text="Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/rr_tv_ladd"
+                    android:textColor="@color/colorPrimaries"
+                    android:textSize="13sp"
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:layout_marginTop="5dp"
+            android:id="@+id/rr_ratings"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aald_ratings"
+            android:gravity="center"
+            android:isIndicator="true"
+            android:max="5" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaries"
+            android:autoLink="all"
+            android:id="@+id/rr_tv_comment"
+            android:textSize="14sp"
+            android:text="The description of post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/rr_iv_post"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/rr_tv_likes"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimaries"
+            android:text="(0) Likes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/colorPrimaries"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/rr_btn_like"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="LIKE"
+                android:background="@null"/>
+
+            <!--                       <Button-->
+            <!--                       android:id="@+id/rrp_btn_comment"-->
+            <!--                       android:layout_width="wrap_content"-->
+            <!--                       android:layout_height="wrap_content"-->
+            <!--                       android:layout_weight="1"-->
+            <!--                       android:text="COMMENT"-->
+            <!--                       android:background="@color/white"-->
+            <!--                       android:drawableLeft="@drawable/ic_comment_black"-->
+            <!--                       android:drawableStart="@drawable/ic_comment_black"/>-->
+
+            <Button
+                android:background="@null"
+                android:id="@+id/rr_btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="SHARE"/>
+
+
+
+        </LinearLayout>
+
+    <View
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaries"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

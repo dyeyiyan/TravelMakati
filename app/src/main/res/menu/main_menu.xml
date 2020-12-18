@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/your_business_mm"-->
+<!--        android:title="Your Business"></item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/about_us_mm"-->
+<!--        android:title="About us"></item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/sign_out_mm"-->
+<!--        android:title="Sign out"></item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/search_all_mm"-->
+<!--        android:title="Search"-->
+<!--        app:showAsAction="always"-->
+<!--        app:actionViewClass="androidx.appcompat.widget.SearchView"></item>-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/add_post_mm"-->
+<!--        android:title="Add Post"-->
+<!--        app:showAsAction="always"></item>-->
+
+    <item
+        android:id="@+id/search_mm"
+        android:icon="@drawable/search_r"
+        android:title="Search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/notif_mm"
+        android:icon="@drawable/notification_r"
+        android:title="Notification"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LeisureAdvertisement">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_leisure"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                   <TextView
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE"
+                    android:textColor="#262626"
+                    android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add information about your Business below. Your Business page will not appear in search results until this information has been verified and approved by our moderators."
+                        android:textColor="@color/colorPrimaries"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/ala_s_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/colorAccent"
+                            android:overlapAnchor="false"
+                            android:spinnerMode="dialog"></Spinner>
+                    </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ala_til_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                    <EditText
+                        android:id="@+id/ala_et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Business Name"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimaries"
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ala_til_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                    <EditText
+                        android:id="@+id/ala_et_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Description"
+                        android:inputType="textMultiLine"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimaries"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ala_til_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                    <EditText
+                        android:id="@+id/ala_et_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price start at"
+                        android:inputType="numberDecimal"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimaries"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/ala_til_street"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                        <EditText
+                            android:id="@+id/ala_et_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:inputType="textPersonName"
+                            android:selectAllOnFocus="true"
+                            android:textColor="@color/colorPrimaries"
+                            android:textCursorDrawable="@null"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:id="@+id/ala_til_barangay"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:errorEnabled="true"-->
+<!--                    app:hintTextAppearance="@style/TextAppearance.AppCompat">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/ala_actv_barangay"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Barangay"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:selectAllOnFocus="true"-->
+<!--                        android:textColor="@color/colorItem"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:id="@+id/ala_til_city"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:errorEnabled="true"-->
+<!--                    app:hintTextAppearance="@style/TextAppearance.AppCompat">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/ala_actv_city"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="City"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:selectAllOnFocus="true"-->
+<!--                        android:textColor="@color/colorItem"-->
+<!--                        android:textCursorDrawable="@null"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ala_til_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                    <EditText
+                        android:id="@+id/ala_et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contact Number"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimaries"
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ala_til_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                    <EditText
+                        android:id="@+id/ala_et_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Website"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimaries"
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ala_til_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+                    <EditText
+                        android:id="@+id/ala_et_hours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Opend Days and Hours"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimaries"
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <!--                <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/ll_two"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/spinner_background"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Spinner-->
+<!--                                android:id="@+id/ala_s_barangay"-->
+<!--                                android:layout_width="150dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:backgroundTint="@color/colorAccent"-->
+<!--                                android:overlapAnchor="false"-->
+<!--                                android:spinnerMode="dialog">-->
+<!--                            </Spinner>-->
+
+<!--                        </LinearLayout>-->
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_toRightOf="@id/ll_two"-->
+<!--                            android:id="@+id/ala_til_city"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:errorEnabled="true"-->
+<!--                            app:hintTextAppearance="@style/TextAppearance.AppCompat">-->
+
+<!--                            <EditText-->
+<!--                                android:focusableInTouchMode="true"-->
+<!--                                android:enabled="false"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:hint="Makati City"-->
+<!--                                android:inputType="none"-->
+<!--                                android:selectAllOnFocus="true"-->
+<!--                                android:textColor="@color/colorItem"-->
+<!--                                android:textCursorDrawable="@null"-->
+<!--                                android:singleLine="true"-->
+<!--                                android:textSize="16sp" />-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:background="@color/colorPrimary"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp">-->
+<!--                </View>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hours"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="Open Days and Hours"-->
+<!--                    android:textColor="#262626"-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                        &lt;!&ndash;Monday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <CheckBox-->
+<!--                                    android:id="@+id/ala_cb_monday"-->
+<!--                                    android:textSize="16sp"-->
+<!--                                    android:text="Monday"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:layout_width="120dp"-->
+<!--                                    android:layout_height="50dp"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_fromM"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog"/>-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="to"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_toM"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        &lt;!&ndash;Tuesday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <CheckBox-->
+<!--                            android:id="@+id/ala_cb_tuesday"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:text="Tuesday"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:layout_width="120dp"-->
+<!--                            android:layout_height="50dp"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/spinner_background"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Spinner-->
+<!--                                android:id="@+id/ala_s_time_fromT"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:backgroundTint="@color/colorAccent"-->
+<!--                                android:overlapAnchor="false"-->
+<!--                                android:spinnerMode="dialog"/>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="to"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/spinner_background"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Spinner-->
+<!--                                android:id="@+id/ala_s_time_toT"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:backgroundTint="@color/colorAccent"-->
+<!--                                android:overlapAnchor="false"-->
+<!--                                android:spinnerMode="dialog" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                        &lt;!&ndash;Wednesday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <CheckBox-->
+<!--                                android:id="@+id/ala_cb_wednesday"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:text="Wednesday"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="50dp"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_fromW"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog"/>-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="to"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_toW"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        &lt;!&ndash;Thursday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <CheckBox-->
+<!--                                android:id="@+id/ala_cb_thursday"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:text="Thursday"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="50dp"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_fromTH"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog"/>-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="to"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_toTH"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        &lt;!&ndash;Friday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <CheckBox-->
+<!--                                android:id="@+id/ala_cb_friday"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:text="Friday"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="50dp"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_fromF"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog"/>-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="to"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_toF"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        &lt;!&ndash;Sunday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <CheckBox-->
+<!--                                android:id="@+id/ala_cb_sat"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:text="Sunday"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="50dp"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_fromSA"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog"/>-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="to"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_toSA"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        &lt;!&ndash;Saturday&ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <CheckBox-->
+<!--                                android:id="@+id/ala_cb_sun"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:text="Saturday"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="50dp"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_marginStart="15dp"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_fromSU"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog"/>-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginEnd="10dp"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="to"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/spinner_background"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <Spinner-->
+<!--                                    android:id="@+id/ala_s_time_toSU"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:backgroundTint="@color/colorAccent"-->
+<!--                                    android:overlapAnchor="false"-->
+<!--                                    android:spinnerMode="dialog" />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:background="@color/colorPrimary"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp">-->
+<!--                </View>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:id="@+id/ala_til_contact"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:errorEnabled="true"-->
+<!--                    app:hintTextAppearance="@style/TextAppearance.AppCompat">-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Contact"-->
+<!--                        android:inputType="textMultiLine|textCapSentences"-->
+<!--                        android:selectAllOnFocus="true"-->
+<!--                        android:textColor="@color/colorItem"-->
+<!--                        android:textCursorDrawable="@null"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:id="@+id/ala_til_website"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:errorEnabled="true"-->
+<!--                    app:hintTextAppearance="@style/TextAppearance.AppCompat">-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Website"-->
+<!--                        android:inputType="textMultiLine|textCapSentences"-->
+<!--                        android:selectAllOnFocus="true"-->
+<!--                        android:textColor="@color/colorItem"-->
+<!--                        android:textCursorDrawable="@null"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <Button
+                    android:id="@+id/ala_btn_add_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add a photo"
+                    android:background="@null"
+                    android:drawablePadding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Here will be alert"
+                    android:textSize="20sp"
+                    android:id="@+id/ala_tv_alert"
+                    android:textColor="@color/colorPrimaries"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:scaleType="center"
+                    android:id="@+id/ala_iv_leisure"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <Button
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white"
+                    android:id="@+id/ala_btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

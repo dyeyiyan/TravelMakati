@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.AddReview">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_rate_us"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat"
+        android:elevation="4dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/aar_mrb_leisure"
+            android:backgroundTint="@color/colorSecondaries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:numStars="5" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/aar_til_expi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aar_mrb_leisure"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <!--EDIT USERNAME-->
+            <EditText
+                android:id="@+id/aar_et_expi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Share your experience"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="true"
+                android:textAlignment="textStart"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/aar_btn_add_photo"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Add a photo"-->
+<!--            app:backgroundTint="@color/colorSecondaries"-->
+<!--            android:drawablePadding="10dp"/>-->
+
+<!--        <ImageView-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_below="@id/aar_til_expi"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:scaleType="center"-->
+<!--            android:id="@+id/aar_iv_leisure"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"/>-->
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:id="@+id/aar_btn_post"
+            android:layout_height="55dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:text="POST"
+            app:backgroundTint="@color/colorSecondaries"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

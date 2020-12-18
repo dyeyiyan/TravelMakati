@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddPhotos">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_add_photos"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:id="@+id/aap_iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/aap_til_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aap_iv_pic"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="500"
+            app:errorEnabled="true">
+            <!--EDIT USERNAME-->
+            <EditText
+                android:id="@+id/aar_et_expi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="What's in this photo"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="true"
+                android:textAlignment="textStart"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/aap_btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="POST" />
+
+    </RelativeLayout>
+
+</LinearLayout>

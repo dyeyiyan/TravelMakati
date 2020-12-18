@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LeisureDetail">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/ald_tb_detail"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+             <ImageView
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/ald_iv_leisure"
+
+                 android:scaleType="fitXY"
+                 android:layout_width="match_parent"
+                 android:layout_height="250dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Makati Park"
+                    android:textColor="@color/colorPrimaries"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:id="@+id/rpi_tv_address"
+                    android:fontFamily="@font/poppins_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comembo"
+                    android:maxLines="2"
+                    android:textColor="@color/colorSecondaries"
+                    android:textSize="12sp"/>
+                <!--App Logo-->
+
+                <!--                <LinearLayout-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <me.zhanghai.android.materialratingbar.MaterialRatingBar-->
+<!--                        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/aald_ratings"-->
+
+<!--                        android:isIndicator="true"-->
+<!--                        android:max="5" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_medium"-->
+<!--                        android:text="4.2"-->
+<!--                        android:textColor="#5E83E1"-->
+<!--                        android:textSize="12sp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_medium"-->
+<!--                        android:text="/"-->
+<!--                        android:textColor="#9E9E9E"-->
+<!--                        android:textSize="12sp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_medium"-->
+<!--                        android:text="(120 Reviews)"-->
+<!--                        android:textColor="#9E9E9E"-->
+<!--                        android:textSize="12sp"/>-->
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

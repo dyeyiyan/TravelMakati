@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/rcl_ll_message"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rcl_civ_profile"
+            android:src="@drawable/default_profile_male"
+            app:civ_border_color="@null"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="left"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/rcl_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="His Message"
+            android:padding="12.2dp"
+            android:textColor="@color/colorPrimaries"
+            android:textSize="11sp"
+            android:background="@drawable/bg_chat_left"/>
+
+        <TextView
+            android:gravity="end"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginLeft="26.3dp"
+            android:id="@+id/rcl_tv_time"
+            android:textColor="@color/colorPrimaries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:text="10:11 AM"/>
+
+<!--        android:text="02/03/2019 05:59PM"-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rcl_tv_isSeen"
+        android:textColor="@color/colorPrimaries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:visibility="gone"
+        android:textAlignment="textEnd"
+        android:text="delivered"/>
+
+
+</LinearLayout>

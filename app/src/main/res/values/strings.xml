@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Travel Makati</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="makati_city">Makati is the financial center of the Philippines where the Philippine Stock Exchange and the Makati Business Club is situated.\nNotable for its multicultural lifestyle, Makati became known not only in the country but also abroad. The city is a home for many Makati hotels, shopping centers, condominiums, financial and entertainment hubs – most of them being owned, managed and frequently visited by the successful foreign businessmen – which is the major factor that made this city very prosperous.
+    </string>
+
+    <string name="title_activity_account_info">AccountInfo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="btm_nav_home">Home</string>
+    <string name="btm_nav_event">Event</string>
+    <string name="btm_nav_map">Map</string>
+    <string name="btm_nav_business">Business</string>
+    <string name="btm_nav_profile">Profile</string>
+    <string name="btm_nav_fav">Favorite</string>
+    <string name="btm_nav_dir">Direction</string>
+    <string name="btm_nav_rate">Rate Us</string>
+
+
+    <!--facebook-->
+    <string name="facebook_app_id" translatable="false">413303992648927</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb413303992648927</string>
+    <string name="btm_nav_user">Users</string>
+    <string name="btm_nav_chat">Chats</string>
+    <string name="btm_nav_news_feed">Activities</string>
+    <string name="btm_nav_explore">Explore</string>
+    <string name="btm_nav_activity">Activity</string>
+    <string name="btm_nav_favorite">Favorite</string>
+    <string name="btm_nav_favs">Favorites</string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="see_all">See All</string>
+    <string name="recently_added">Recently added</string>
+    <string name="popular_spots">Popular Spots</string>
+    <string name="categories">Categories</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="just_for_you">Just for you</string>
+    <string name="native_advanced_ad_unit_id">ca-app-pub-5157557253648277/2334066487</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Log in</string>
+    <string name="or">or</string>
+    <string name="log_in_with_facebook">Log in with Facebook</string>
+    <string name="log_in_with_google">Log in with Google</string>
+    <string name="already_have_an_acount">Already have an acount?</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">or</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="by_signing_up_you_accept_the">By signing up you accept the</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <!--    <string name="default_web_client_id">google</string>-->
+</resources>

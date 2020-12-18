@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddRate">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/aar_tb_add_rate"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+            <!--ET input post title // pTitleET-->
+            <EditText
+                android:id="@+id/aar_et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Enter title"
+                android:singleLine="true">
+            </EditText>
+
+            <!--IV input post image // pTitleET-->
+            <ImageView
+                android:minHeight="200dp"
+                android:id="@+id/aar_iv_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <!--ET input post description // pDesciptionET-->
+            <EditText
+                android:id="@+id/aar_et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Enter Description"
+                android:minHeight="120dp"
+                android:gravity="start"
+                android:inputType="textCapSentences|textMultiLine">
+            </EditText>
+
+
+            <!--BTN: Publish post to firebase-->
+            <Button
+                android:id="@+id/aar_btn_upload"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Upload"/>
+
+
+        </LinearLayout>
+</ScrollView>

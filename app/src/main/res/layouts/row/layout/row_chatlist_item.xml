@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="15dp"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+             android:id="@+id/ll_rcl"
+             android:layout_marginLeft="15dp"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@+id/rc_civ_online_status"
+             android:layout_toRightOf="@+id/rc_civ_online_status"
+             android:orientation="vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:includeFontPadding="false"
+                 android:id="@+id/rc_tv_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="His name"
+                 android:fontFamily="@font/poppins_bold"
+                 android:textColor="#1d86e3"
+                 android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/rc_tv_last_message"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/rc_tv_name"
+                 android:fontFamily="@font/poppins"
+                 android:maxLines="1"
+                 android:text="The last message"
+                 android:textColor="@color/colorPrimaries"
+                 android:textSize="12sp" />
+
+         </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/rc_civ_profile_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/default_profile_male" />
+
+        <ImageView
+            android:layout_toRightOf="@+id/rc_civ_profile_pic"
+            android:id="@+id/rc_civ_online_status"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:background="@drawable/circle_online"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toLeftOf="@+id/ll_rcl"
+            android:id="@+id/rc_civ_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/default_profile_female" />
+
+    </RelativeLayout>
+</LinearLayout>

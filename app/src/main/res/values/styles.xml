@@ -1,0 +1,108 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--initiate color of pop up theme-->
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--        <item name="popupTheme">@style/PopupTheme</item>-->
+
+        <!-- Status bar stuff. -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+
+
+
+<!--    <style name="MaterialTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+
+    <!--color of option-->
+    <style name="PopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaries</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+<!--    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">-->
+<!--        <item name="android:progressDrawable">@drawable/rating_bar_staron</item>-->
+<!--        <item name="android:minHeight">18dp</item>-->
+<!--        <item name="android:maxHeight">18dp</item>-->
+<!--    </style>-->
+
+    <style name="Widget.MaterialRatingBar.RatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:maxHeight">36dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Small">
+        <item name="android:minHeight">45dp</item>
+        <item name="android:maxHeight">45dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Indicator">
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Indicator.Small">
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
+
+
+    <style name="MyCustomTheme" parent="MaterialSearchBarLight">
+        <item name="mt_searchBarColor">@color/searchBarPrimaryColor</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/searchBarNavIconTintColor</item>
+        <item name="mt_searchIconTint">@color/searchBarSearchIconTintColor</item>
+        <item name="mt_clearIconTint">@color/searchBarClearIconTintColor</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColor</item>
+        <item name="mt_backIconTint">@color/searchBarBackIconTintColor</item>
+        <item name="mt_textCursorTint">@color/searchBarCursorColor</item>
+        <item name="mt_textColor">@color/searchBarTextColor</item>
+        <item name="mt_hintColor">@color/searchBarHintColor</item>
+        <item name="mt_placeholderColor">@color/searchBarPlaceholderColor</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColor</item>
+    </style>
+
+    <style name="CustomFab">
+        <item name="android:background">
+            @drawable/fab_label_background
+        </item>
+        <item name="android:textColor">@color/colorSecondaries</item>
+    </style>
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:background">#FFCC66</item>
+        <item name="android:width">16dp</item>
+        <item name="android:height">16dp</item>
+    </style>
+
+</resources>

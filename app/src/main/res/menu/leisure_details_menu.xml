@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/ldm_share"
+        android:title="Share"></item>
+
+    <item
+        android:id="@+id/ldm_review"
+        android:title="Rate us"></item>
+
+    <item
+        android:id="@+id/ldm_direction"
+        android:title="Direction"></item>
+
+
+    <item
+        android:id="@+id/ldm_add_fav"
+        android:title="Add to Favorite"></item>
+
+
+    <!--    <item-->
+<!--        android:id="@+id/ldm_add_photo"-->
+<!--        android:title="Add Photo"></item>-->
+
+    <!--    <item-->
+<!--        android:id="@+id/ldm_message"-->
+<!--        android:title="Send Message"></item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/ldm_share"-->
+<!--        android:title="Share"-->
+<!--        app:showAsAction="collapseActionView|ifRoom"></item>>-->
+
+</menu>

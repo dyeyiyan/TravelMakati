@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_margin="15dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/fp_iv_icon"
+        android:layout_gravity="center"
+        android:src="@drawable/account"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+
+    <TextView
+        android:id="@+id/fp_tv_list"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Profile"
+        android:textColor="@color/colorPrimaries"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/forward"
+        android:layout_width="18dp"
+        android:layout_height="18dp"/>
+
+
+</LinearLayout>

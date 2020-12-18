@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/bnm_home"-->
+<!--        android:icon="@drawable/ic_favorite"-->
+<!--        android:title="@string/btm_nav_fav" />-->
+
+    <item
+        android:id="@+id/bnm_map"
+
+        android:title="@string/btm_nav_rate" />
+
+<!--    <item-->
+<!--        android:id="@+id/bnm_event"-->
+<!--        android:icon="@drawable/ic_directions"-->
+<!--        android:title="@string/btm_nav_dir" />-->
+</menu>

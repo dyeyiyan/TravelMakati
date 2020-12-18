@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".activities.Chat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ac_tb_chat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Receiver profile picture-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ac_civ_user_profile"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_profile_male"
+                app:civ_border_overlay="true" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ll_rcl"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:id="@+id/ac_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jay Ian Galaura"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/colorPrimaries"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/rc_civ_online_status"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:background="@drawable/circle_online"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/ac_tv_user_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Online"
+                        android:textColor="@color/colorPrimaries"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--Receiver profile picture-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginRight="32.2dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call"
+                app:civ_border_overlay="true" />
+
+            <!--Receiver profile picture-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/videocam"
+                app:civ_border_overlay="true" />
+
+        </LinearLayout>
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            Receiver Name-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/ac_tv_name"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="His Name"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textColor="@color/colorBackground"/>-->
+
+        <!--            Receiver status i.e online or offline-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/ac_tv_user_status"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="online"-->
+        <!--                android:textSize="12sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textColor="@color/colorBackground"/>-->
+        <!--        </LinearLayout>-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--Recycler View-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ac_rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ac_ll_chat"
+        android:layout_below="@+id/ac_tb_chat"/>
+
+    <!--Send message edit text and button in layout-->
+
+    <LinearLayout
+        android:id="@+id/ac_ll_chat"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="2dp"
+            app:contentPadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera"
+                    app:civ_border_overlay="true" />
+
+                <EditText
+                    android:padding="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/ac_et_message"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Type a message"
+                    android:textSize="14sp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageButton
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ac_ib_send"
+                    android:background="@null"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/send"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginRight="24.3dp"-->
+<!--            android:layout_marginLeft="18dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/ic_fav_red"-->
+<!--            app:civ_border_overlay="true" />-->
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ac_ll_chat"-->
+<!--        android:background="@color/colorBackground"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        &lt;!&ndash;Edit text: Input Message&ndash;&gt;-->
+<!--            <EditText-->
+<!--                android:id="@+id/ac_et_message"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@null"-->
+<!--                android:hint="Start typing"-->
+<!--                android:padding="15dp"-->
+<!--                android:inputType="textCapSentences|textMultiLine"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/ac_ib_send"-->
+<!--                android:background="@null"-->
+<!--                android:layout_width="24.87dp"-->
+<!--                android:layout_height="23.09dp"-->
+<!--                android:src="@drawable/ic_send_blue"/>-->
+
+<!--    </LinearLayout>-->
+
+
+</RelativeLayout>
